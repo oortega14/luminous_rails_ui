@@ -17,8 +17,8 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "https://oortega.dev/gems"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://oortega.dev/gems/pixel_rails"
-  spec.metadata["changelog_uri"] = "https://github.com/oortega14/pixel_rails"
+  spec.metadata["source_code_uri"] = "https://oortega.dev/gems/luminous_rails_ui"
+  spec.metadata["changelog_uri"] = "https://github.com/oortega14/luminous_rails_ui"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

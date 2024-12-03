@@ -1,14 +1,16 @@
 # frozen_string_literal: true
 
 require_relative "luminous_rails_ui/version"
+require 'rake'
 
+# Luminous Rails UI
 module LuminousRailsUi
   class Error < StandardError; end
 
   # Loading the initial rake
-  class Railtie < Rails::Railtie
-    rake_tasks do
-      load "tasks/luminous_rails_ui.rake"
-    end
+  def self.load_tasks
+    load File.expand_path('../tasks/luminous_rails_ui.rake', __dir__)
   end
 end
+
+LuminousRailsUI.load_tasks

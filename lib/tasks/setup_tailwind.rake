@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-# lib/tasks/pixel_rails.rake
-namespace :luminous_rails_ui do
+# lib/tasks/setup_tailwind.rake
+namespace :setup_tailwind do
   desc "Configure Tailwind to use LuminousRailsUI"
   task :install do
-    gem_path = Gem::Specification.find_by_name("pixel_rails").gem_dir
+    gem_path = Gem::Specification.find_by_name("luminous_rails_ui").gem_dir
     tailwind_config_path = File.join(Rails.root, "tailwind.config.js")
 
     unless File.exist?(tailwind_config_path)
@@ -27,6 +27,6 @@ namespace :luminous_rails_ui do
       file.puts config_content
     end
 
-    puts "LuminousRailsUi instalado en Tailwind con éxito."
+    puts "LuminousRailsUi installed successfully in Tailwind."
   end
 end
