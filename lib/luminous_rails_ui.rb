@@ -1,5 +1,7 @@
 require_relative 'luminous_rails_ui/version'
 require 'rake'
+require 'luminous_rails_ui/config'
+require "luminous_rails_ui/components/button"
 
 # Luminous Rails UI
 module LuminousRailsUi
