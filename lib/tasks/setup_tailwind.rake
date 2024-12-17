@@ -1,5 +1,5 @@
 # lib/tasks/setup_tailwind.rake
-namespace :luminous_ui do
+namespace :luminous_rails_ui do
   desc "Configure Tailwind to use LuminousRailsUI"
   task :setup do
     gem_path = Gem::Specification.find_by_name("luminous_rails_ui").gem_dir
